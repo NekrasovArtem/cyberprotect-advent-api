@@ -28,21 +28,19 @@ API, написанное на хакатоне для новогоднего а
     docker-compose up -d
     ```
 
-4. Открыть в браузере веб-интерфейс Laravel http://localhost:8867/ .
-
-5. Откройте интерфейс командной строки Laravel:
+4. Откройте интерфейс командной строки Laravel:
     ```sh
     docker exec -it app bash
     ```
 
-6. Установите пакеты:
+5. Установите пакеты:
     ```sh
     composer update
     ```
 
-7. Выключение проекта:
+6. Выполните миграции:
     ```sh
-    docker-compose down
+    php artisan migrate
     ```
 
 ## Документация
